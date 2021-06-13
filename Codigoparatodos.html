@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+  <script src="https://kit.fontawesome.com/939df34509.js" crossorigin="anonymous"></script>
+  
+  <style>
+    .like {
+      color: rgb(2, 177, 75);
+    }
+    .dislike {
+      color: #ff2222;
+    }
+
+    .rate {
+      color: rgba(248, 227, 41, 0.836);
+    }
+  </style>
+
+  <title>CréditodeTodxs</title>
+
+</head>
+<body>
+  <div class="outer-container">
+
+    <header>
+      <nav class="navbar bg-light bg-gradient">
+        <div class="container">
+          
+          <a href="./index.html" class="navbar-brand">
+            <img src="./imagebns/serasa-logo.png" alt="oiie" id="logo" width="50" >
+          </a>
+
+          <ul class="navbar-nav flex-row fw-bold">
+            <li class="nav-item px-3"><a class="nav-link" href="#">Crédito</a></li>
+            <li class="nav-item ps-3"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center"
+        style="background-image: url('./imagebns/rosinha.jpg'); background-repeat: no-repeat; background-size: cover;">
+        
+        <h1 class="text-white">Empréstimo e Cartão de Crédito 100% online</h1>
+        <p class="text-white">Encontre o que procura com a menor taxa de juros</p>
+
+        <form action="#" class="d-flex justify-content-center align-items-center">
+          <select name="assunto" class="form-select mx-3" id="">
+              <option value="">Selecione o Empréstimo...</option>
+              <option value="WEB">Empréstimo pessoal</option>
+              <option value="DESKTOP">Empréstimo consignado</option>
+              <option value="REDES">Empréstimo com garantia</option>
+          </select>
+          <select name="area_especifica" class="form-select mx-3" id="">
+              <option value="">Selecione o Cartão</option>
+              <option value="html5">Cartão de crédito</option>
+              <option value="css3">Cartão Pré-pago</option>
+          </select>
+          <input type="submit" class="btn btn-primary fw-bold px-4" value="Buscar">
+      </form>
+      </div>
+
+    </header>
+
+
+    <main class="container min-vh-100 d-flex flex-column align-items-center">
+      <h1 class="text-primary py-5 mt-5">Últimas Ofertas Adicionadas</h1>
+      <table class="table align-middle text-center" style="line-height: 3;">
+          <thead class="text-secondary">
+              <tr>
+                  <th>Assunto</th>
+                  <th>Área Específica</th>
+                  <th>Conteúdo</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody> 
+              <tr>
+                  <td><span  class="bg-info d-block text-white">WEB </span></td>
+                  <td>HTML5</td>
+                  <td>Introdução ao HTML5</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>20</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>3</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td><span  class="bg-info d-block text-white">WEB </span></td>
+                  <td>CSS3</td>
+                  <td>Introdução ao CSS3</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>3</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>3</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td><span  class="bg-success d-block text-white">Desktop</span></td>
+                  <td>Visual Basic 6</td>
+                  <td>Introdução ao Visual Basic 6</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>3</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>3</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td><span class="bg-secondary d-block text-white">Redes</span></td>
+                  <td>VPN</td>
+                  <td>Introdução a VPNs</td>
+                  <td class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <div class="like "><i class="fas fa-thumbs-up me-3"></i>0</div>
+                      <div class="dislike"><i class="fas fa-thumbs-down me-3"></i>1</div>
+                    </div>
+                    <div class="rate ms-5">
+                      <i class="far fa-star"></i>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <div class="py-5">
+          <a href="Vermais_ofertas.html" class="btn btn-outline-primary fw-bold px-3 py-2">Saiba mais sobre as Ofertas</a>
+      </div>
+    </main>
+
+    <section class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center "
+      style="background-image: url(./imagebns/cfc8a2e2364985acfba8b7a75cb5abe9.jpg); background-repeat: no-repeat; background-size: cover;">
+      
+      <div class="container text-white col-md-5 offset-md-6">
+        
+        <div class="text">
+          <h2 class="my-5 ">As vantagens do Serasa eCred</h2>
+        </div>
+
+        <div class="text">
+          <p class="col-md-9">
+            <img src="./imagebns/juros-baixo-a4794af063d1b9d1f04fedb679c4751d.png" alt="Logo" width="150">
+            <h3>Empréstimo com juros baixos, taxas a partir de 0,75% a.m. e cartões com diversos benefícios.</h3>
+          </p>
+        </div>
+
+<div class="text">
+  <p class="col-md-9">
+    <img src="./imagebns/gratis-2efd041b714f3a2cddf3bd8a397a9d78.png" alt=Logo" width="150">
+    <h4> Simulação de empréstimo grátis, Simule e compare quantas vezes quiser sem pagar nada por isso.</h4>
+  </p>
+</div>
+
+<div class="text">
+  <p class="col-md-9">
+    <img src="./imagebns/rapidez-b30c390301b84ed7ec3f69652a06b4eb.png" alt="Logo" width="150">
+    <h4> Empréstimo rápido e fácil, Dinheiro rápido e direto na conta.</h4>
+  </p>
+</div>
+
+<div class="text">
+  <p class="col-md-9">
+    <img src="./imagebns/seguranca-serasa-2a1a1c509b5d9220f7fa4676cd4f60e2.png" alt="Logo" width="150">
+    <h4> A Serasa garante a privacidade e segurança das suas informações.</h4>
+  </p>
+</div>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white" style="height:100%">
+      <div class="container d-flex justify-content-around w-100 py-5">
+
+        <div class="footer-box">
+          <figure>
+            <img src="./imagebns/serasa-logo.png" alt="Logo" width="150">
+            <figcaption class="py-3">
+                <h2>CréditodeTodxs</h2>
+                <p>Empréstimo e Cartão de Crédito 100% online</p>
+            </figcaption>
+          </figure>                        
+        </div>
+
+        <div class="colaboradores text-white">
+          <h2>Colaboradores</h2>
+          <ul class="list-unstyled">
+            <li class="my-4">
+              <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                <img src="./images/google.png" alt="Logo" width="32px">
+                <span class="text-white mx-3 fs-5">Google</span>
+              </a>
+            </li>
+            
+            
+            <li class="my-4">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="./images/youtube.png" alt="Logo" width="32px">
+                <span class="text-white mx-3 fs-5">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="redes-sociais">
+          <h2>Nos encontre nas redes sociais</h2>
+          <ul class="list-unstyled">
+            <li class="my-4">
+              <a href="#">
+                <i class="fab fa-facebook-square fa-2x" style="color: white;"></i>
+                <span class="text-white mx-3 fs-5">Facebook</span>
+              </a>
+            </li>
+            <li class="my-4">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+                <span class="text-white mx-3 fs-5">Instagram</span>
+              </a>
+            </li>
+            <li class="my-4">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x" style="color: white;"></i>
+                <span class="text-white mx-3 fs-5">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
